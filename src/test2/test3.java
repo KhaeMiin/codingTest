@@ -1,4 +1,4 @@
-package test22;
+package test2;
 
 
 /**

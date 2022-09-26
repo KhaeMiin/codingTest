@@ -39,10 +39,13 @@ class Solution {
                     int month = Integer.parseInt(privacy.substring(5, 7));
 
                     month = month + termsNum;
-                    if (month > 12) {
+                    while (month > 12) { //유효기간이 60개월이 될 수 있고 그러므로 12월 안으로 될 때 까지 while문을 돌린다.
                         year = year + 1;
                         month = month - 12;
+
+                        break;
                     }
+
 
 
                     String strMonth = String.valueOf(month);
